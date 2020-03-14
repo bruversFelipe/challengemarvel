@@ -10,7 +10,7 @@ const MasterLayout = memo(({ children, title }) => {
   const { state: { theme } } = useContextGlobal();
 
   return (
-    <div>
+    <React.Fragment>
       <Header />
       <Space>
         <Title title={title} />
@@ -19,7 +19,7 @@ const MasterLayout = memo(({ children, title }) => {
         </Card>
       </Space>
       {theme.themeName === 'thanos' && <EasterEgg />}
-    </div>
+    </React.Fragment>
   );
 });
 

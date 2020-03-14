@@ -43,11 +43,16 @@ const Header = memo(({ history }) => {
     <HeaderWrapper>
       <div className="logo" onClick={home} role="presentation" />
       <DropDown title={<i className="fas fa-fill-drip" />}>
-        {menu.map((item) => (
-          <DropDown.Item key={item.dataIndex} onClick={() => saveTheme(item.dataIndex)}>
-            {item.title}
-          </DropDown.Item>
-        ))}
+        {menu.map((item) => {
+          function theme() {
+            saveTheme(item.dataIndex);
+          }
+          return (
+            <DropDown.Item key={item.dataIndex} onClick={theme}>
+              {item.title}
+            </DropDown.Item>
+          );
+        })}
       </DropDown>
     </HeaderWrapper>
   );

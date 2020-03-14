@@ -10,7 +10,7 @@ const routes = [
     path: '/',
     exact: true,
     Component: Home,
-    title: 'Bem Vindo',
+    title: 'Welcome',
   },
   {
     key: 2,

@@ -3,9 +3,7 @@ import RowWrapper from './style';
 
 const Row = memo(({ children }) => (
   <RowWrapper>
-    {React.Children.map(children, (child) => (
-      <React.Fragment key={child}>{child}</React.Fragment>
-    ))}
+    {React.Children.map(children, (child) => child)}
   </RowWrapper>
 ));
 
