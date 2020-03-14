@@ -62,6 +62,25 @@ const CardHeroesWrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 420px) {
+    .card-hero {
+      width: 200px;
+
+      img {
+        height: 200px;
+      }
+    }
+  }
+  @media (max-width: 350px) {
+    .card-hero {
+      width: 150px;
+
+      img {
+        height: 150px;
+      }
+    }
+  }
 `;
 
 export default CardHeroesWrapper;

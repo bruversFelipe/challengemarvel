@@ -50,6 +50,21 @@ const IndividualHeroContainerWrapper = styled.div`
       margin-bottom: 5px;
     }
   }
+  @media (max-width: 700px) {
+    .content {
+      flex-direction: column;
+      img {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  @media (max-width: 420px) {
+    .content {
+      img {
+        width: 100%;
+      }
+    }
+  }
 `;
 
 export default IndividualHeroContainerWrapper;

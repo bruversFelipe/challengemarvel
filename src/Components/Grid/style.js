@@ -14,6 +14,17 @@ const RowWrapper = styled.div`
       margin-left: 0;
     }
   }
+
+  @media (max-width: 1050px) {
+    .col {
+      width: 46%;
+    }
+  }
+  @media (max-width: 750px) {
+    .col {
+      width: 100%;
+    }
+  }
 `;
 
 export default RowWrapper;
