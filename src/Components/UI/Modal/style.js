@@ -6,7 +6,7 @@ const configTitle = () => `
 `;
 
 const getFade = () => `
-    animation: getFade 1s linear;
+    animation: getFade 0.4s linear;
 
     @keyframes getFade {
         0% {
@@ -19,7 +19,7 @@ const getFade = () => `
 `;
 
 const getSwipe = () => `
-    animation: getSwipe 1s linear;
+    animation: getSwipe 0.4s linear;
 
     @keyframes getSwipe {
         0% {
