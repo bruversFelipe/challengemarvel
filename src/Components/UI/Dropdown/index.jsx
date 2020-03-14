@@ -5,9 +5,7 @@ const Dropdown = memo(({ title, children }) => (
   <DropdownWrapper>
     <div className="title-drop">{title}</div>
     <ul className="items-drop">
-      {React.Children.map(children, (child) => (
-        <React.Fragment key={child}>{child}</React.Fragment>
-      ))}
+      {React.Children.map(children, (child) => child)}
     </ul>
   </DropdownWrapper>
 ));
