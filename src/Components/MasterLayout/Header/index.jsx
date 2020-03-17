@@ -41,7 +41,9 @@ const Header = memo(({ history }) => {
 
   return (
     <HeaderWrapper>
-      <div className="logo" onClick={home} role="presentation" />
+      <div className="logo" onClick={home} role="presentation">
+        <div className="person" />
+      </div>
       <DropDown title={<i className="fas fa-fill-drip" />}>
         {menu.map((item) => (
           <DropDown.Item key={item.dataIndex} onClick={() => saveTheme(item.dataIndex)}>

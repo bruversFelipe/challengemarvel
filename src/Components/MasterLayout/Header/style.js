@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import logo from './logo';
 
 const HeaderWrapper = styled.div`
   background: ${(props) => props.theme.primary};
@@ -11,9 +12,18 @@ const HeaderWrapper = styled.div`
   box-shadow: ${(props) => props.theme.shadow};
 
   .logo {
-    background: url('data:image/png;base64,${(props) => props.theme.logo}') no-repeat;
+    background: url('data:image/png;base64,${logo}') no-repeat;
+    position: relative;
+
     width: 144px;
     height: 60px;
+    .person {
+      width: 40px;
+      height: 60px;
+      position: absolute;
+      right: 0;
+      background: url('data:image/png;base64,${(props) => props.theme.person}') no-repeat;
+    }
   }
 `;
 
